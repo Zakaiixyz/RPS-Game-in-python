@@ -1,21 +1,12 @@
 import random
 
-def Player() :
-    plr: str | None = None
-    while plr != 'p' and plr != 'P' and plr != 's' and plr != 'S' and plr != 'R' and plr != 'r' : 
-        plr = input("please Pick R/r for Rock , P/p for Paper , S/s for Scissors : ")
-    if (plr == 'p' || plr == 'P') : return "Paper"
-    elif (plr == 's' || plr == 'S') : return "Scissors"
-    elif (plr == 'r' || plr == 'R') : return "Rock"
-
-
-
 print("Welcome to ROCK-PAPER-SCISSORS game -Python edition-")
 
 name = input("What is the Player's name ? : ")
+player: str | None = None
 
-
-
+while player != 'p' and player != 'P' and player != 's' and player != 'S' and player != 'R' and player != 'r' : 
+    player = input("please Pick R/r for Rock , P/p for Paper , S/s for Scissors : ")
 
 computer = random.randrange(1 , 4)
 if computer == 1 :
